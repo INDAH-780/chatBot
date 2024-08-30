@@ -5,7 +5,7 @@ const form = document.getElementById("chat-form");
 const displayedImage = document.getElementById("files");
 const uploadDescription = document.getElementById("upload-description");
 
-// Initially hide upload elements
+// we hide the upload container and will be accessible only when the upload botton is clicked
 const uploadContainer = document.querySelector(".uploads");
 uploadContainer.style.display = "none";
 
@@ -109,9 +109,9 @@ async function sendMessage() {
     uploadContainer.style.display = "none";
     userInput.style.display = "block";
     document.getElementById("imagePreview").style.display = "none";
-    // selectedFile = null;
-    // displayedImage.value = ""; // Reset file input
-    // uploadDescription.value = ""; // Clear description field
+    selectedFile = null;
+    displayedImage.value = ""; // Reset file input
+    uploadDescription.value = ""; // Clear description field
   }
 
  
